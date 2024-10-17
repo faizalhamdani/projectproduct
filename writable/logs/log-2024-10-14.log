@@ -1,0 +1,114 @@
+ERROR - 2024-10-14 11:16:12 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\Magang\product_registration\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 E:\Magang\product_registration\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'product_registr...', 3306, '', 0)
+#1 E:\Magang\product_registration\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\Magang\product_registration\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\Magang\product_registration\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 E:\Magang\product_registration\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Magang\product_registration\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\Magang\product_registration\app\Controllers\ProductController.php(27): CodeIgniter\BaseModel->findAll()
+#7 E:\Magang\product_registration\system\CodeIgniter.php(933): App\Controllers\ProductController->index()
+#8 E:\Magang\product_registration\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\Magang\product_registration\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\Magang\product_registration\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 E:\Magang\product_registration\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 E:\Magang\product_registration\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 E:\Magang\product_registration\system\rewrite.php(44): require_once('E:\\Magang\\produ...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\Magang\product_registration\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 E:\Magang\product_registration\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\Magang\product_registration\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\Magang\product_registration\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#3 E:\Magang\product_registration\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\Magang\product_registration\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\Magang\product_registration\app\Controllers\ProductController.php(27): CodeIgniter\BaseModel->findAll()
+#6 E:\Magang\product_registration\system\CodeIgniter.php(933): App\Controllers\ProductController->index()
+#7 E:\Magang\product_registration\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\Magang\product_registration\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\Magang\product_registration\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 E:\Magang\product_registration\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\Magang\product_registration\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 E:\Magang\product_registration\system\rewrite.php(44): require_once('E:\\Magang\\produ...')
+#13 {main}
+CRITICAL - 2024-10-14 11:16:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `products`.`id`, `products`.`color`, `products`.`product_type`, `brands`.`name` as `brand_name`, `categories`.`name` as `category_name`, `subcategories`.`name` as `subcategory_name`, `capacities`.`value` as `capacity`, `compressor_warranties`.`value` as `compressor_warranty`, `sparepart_warranties`.`value` as `sparepart_warranty`
+FROM `products`
+JOIN `brands` ON `brands`.`id` = `products`.`brand_id`
+JOIN `categories` ON `categories`.`id` = `products`.`category_id`
+JOIN `subcategories` ON `subcategories`.`id` = `products`.`subcategory_id`
+JOIN `capacities` ON `capacities`.`id` = `products`.`capacity_id`
+JOIN `compressor_warranties` ON `compressor_warranties`.`id` = `products`.`compressor_warranty_id`
+JOIN `sparepart_warranties` ON `sparepart_warranties`.`id` = `products`.`sparepart_warranty_id`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProductController.php(27): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+ERROR - 2024-10-14 11:16:19 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\Magang\product_registration\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 E:\Magang\product_registration\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'product_registr...', 3306, '', 0)
+#1 E:\Magang\product_registration\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\Magang\product_registration\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\Magang\product_registration\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 E:\Magang\product_registration\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Magang\product_registration\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\Magang\product_registration\app\Controllers\ProductController.php(27): CodeIgniter\BaseModel->findAll()
+#7 E:\Magang\product_registration\system\CodeIgniter.php(933): App\Controllers\ProductController->index()
+#8 E:\Magang\product_registration\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\Magang\product_registration\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\Magang\product_registration\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 E:\Magang\product_registration\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 E:\Magang\product_registration\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 E:\Magang\product_registration\system\rewrite.php(44): require_once('E:\\Magang\\produ...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\Magang\product_registration\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 E:\Magang\product_registration\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\Magang\product_registration\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\Magang\product_registration\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#3 E:\Magang\product_registration\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\Magang\product_registration\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\Magang\product_registration\app\Controllers\ProductController.php(27): CodeIgniter\BaseModel->findAll()
+#6 E:\Magang\product_registration\system\CodeIgniter.php(933): App\Controllers\ProductController->index()
+#7 E:\Magang\product_registration\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\Magang\product_registration\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\Magang\product_registration\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 E:\Magang\product_registration\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 E:\Magang\product_registration\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 E:\Magang\product_registration\system\rewrite.php(44): require_once('E:\\Magang\\produ...')
+#13 {main}
+CRITICAL - 2024-10-14 11:16:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `products`.`id`, `products`.`color`, `products`.`product_type`, `brands`.`name` as `brand_name`, `categories`.`name` as `category_name`, `subcategories`.`name` as `subcategory_name`, `capacities`.`value` as `capacity`, `compressor_warranties`.`value` as `compressor_warranty`, `sparepart_warranties`.`value` as `sparepart_warranty`
+FROM `products`
+JOIN `brands` ON `brands`.`id` = `products`.`brand_id`
+JOIN `categories` ON `categories`.`id` = `products`.`category_id`
+JOIN `subcategories` ON `subcategories`.`id` = `products`.`subcategory_id`
+JOIN `capacities` ON `capacities`.`id` = `products`.`capacity_id`
+JOIN `compressor_warranties` ON `compressor_warranties`.`id` = `products`.`compressor_warranty_id`
+JOIN `sparepart_warranties` ON `sparepart_warranties`.`id` = `products`.`sparepart_warranty_id`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProductController.php(27): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')

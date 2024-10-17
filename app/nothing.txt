@@ -1,0 +1,6 @@
+$routes->get('/garansi_sparepart', 'GaransiSparepartController::index');
+$routes->get('/garansi_sparepart/addGaransiSparepart', 'GaransiSparepartController::addGaransiSparepart');
+$routes->post('/garansi_sparepart/saveGaransiSparepart', 'GaransiSparepartController::saveGaransiSparepart');
+$routes->get('/garansi_sparepart/editGaransiSparepart/(:num)', 'GaransiSparepartController::editGaransiSparepart/$1');
+$routes->post('/garansi_sparepart/updateGaransiSparepart/(:num)', 'GaransiSparepartController::updateGaransiSparepart/$1');
+$routes->get('/garansi_sparepart/deleteGaransiSparepart/(:num)', 'GaransiSparepartController::deleteGaransiSparepart/$1');

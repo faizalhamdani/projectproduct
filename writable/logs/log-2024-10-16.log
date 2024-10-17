@@ -1,0 +1,417 @@
+CRITICAL - 2024-10-16 03:29:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "list_product.php"
+[Method: GET, Route: product]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('list_product.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('list_product', [], true)
+ 3 APPPATH\Controllers\ProductController.php(29): view('list_product', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+CRITICAL - 2024-10-16 03:33:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "partials/header.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('partials/header.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('partials/header', null, true)
+ 3 APPPATH\Views\dashboard.php(4): CodeIgniter\View\View->include('partials/header')
+ 4 SYSTEMPATH\View\View.php(234): include('E:\\Magang\\product_registration\\app\\Views\\dashboard.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 7 APPPATH\Controllers\DashboardController.php(9): view('dashboard')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+CRITICAL - 2024-10-16 03:34:13 --> ErrorException: Undefined variable $adminName
+[Method: GET, Route: /]
+in APPPATH\Views\dashboard.php on line 9.
+ 1 APPPATH\Views\dashboard.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $adminName', 'E:\\Magang\\product_registration\\app\\Views\\dashboard.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Magang\\product_registration\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(9): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+INFO - 2024-10-16 03:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 03:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 03:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 04:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 04:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 04:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-16 04:18:10 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "$1"
+[Method: POST, Route: kapasitas/deleteKapasitas/$1]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('kapasitas/deleteKapasitas/$1')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('kapasitas/deleteKapasitas/$1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+INFO - 2024-10-16 04:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-16 04:27:32 --> ErrorException: Undefined variable $capacity
+[Method: GET, Route: kategori]
+in APPPATH\Views\kategori\kategori.php on line 86.
+ 1 APPPATH\Views\kategori\kategori.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $capacity', 'E:\\Magang\\product_registration\\app\\Views\\kategori\\kategori.php', 86)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Magang\\product_registration\\app\\Views\\kategori\\kategori.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('kategori/kategori', [], true)
+ 5 APPPATH\Controllers\KategoriController.php(16): view('kategori/kategori', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KategoriController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+CRITICAL - 2024-10-16 04:27:44 --> ErrorException: Undefined variable $capacity
+[Method: GET, Route: kategori]
+in APPPATH\Views\kategori\kategori.php on line 86.
+ 1 APPPATH\Views\kategori\kategori.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $capacity', 'E:\\Magang\\product_registration\\app\\Views\\kategori\\kategori.php', 86)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Magang\\product_registration\\app\\Views\\kategori\\kategori.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('kategori/kategori', [], true)
+ 5 APPPATH\Controllers\KategoriController.php(16): view('kategori/kategori', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KategoriController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+CRITICAL - 2024-10-16 04:27:50 --> ErrorException: Undefined array key "value"
+[Method: GET, Route: kategori]
+in APPPATH\Views\kategori\kategori.php on line 86.
+ 1 APPPATH\Views\kategori\kategori.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "value"', 'E:\\Magang\\product_registration\\app\\Views\\kategori\\kategori.php', 86)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Magang\\product_registration\\app\\Views\\kategori\\kategori.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('kategori/kategori', [], true)
+ 5 APPPATH\Controllers\KategoriController.php(16): view('kategori/kategori', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KategoriController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+INFO - 2024-10-16 04:38:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 04:38:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 04:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 04:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 04:41:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 04:41:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 04:46:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 05:50:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 05:51:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-16 06:43:50 --> ErrorException: Undefined variable $garansi_sparepart
+[Method: GET, Route: garansi_kompresor]
+in APPPATH\Views\garansi_kompresor\garansi_kompresor.php on line 79.
+ 1 APPPATH\Views\garansi_kompresor\garansi_kompresor.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $garansi_sparepart', 'E:\\Magang\\product_registration\\app\\Views\\garansi_kompresor\\garansi_kompresor.php', 79)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Magang\\product_registration\\app\\Views\\garansi_kompresor\\garansi_kompresor.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('garansi_kompresor/garansi_kompresor', [], true)
+ 5 APPPATH\Controllers\GaransiKompresorController.php(16): view('garansi_kompresor/garansi_kompresor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GaransiKompresorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GaransiKompresorController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+INFO - 2024-10-16 06:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-16 06:49:32 --> ErrorException: Undefined variable $garansi_sparepart
+[Method: GET, Route: garansi_kompresor]
+in APPPATH\Views\garansi_kompresor\garansi_kompresor.php on line 79.
+ 1 APPPATH\Views\garansi_kompresor\garansi_kompresor.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $garansi_sparepart', 'E:\\Magang\\product_registration\\app\\Views\\garansi_kompresor\\garansi_kompresor.php', 79)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Magang\\product_registration\\app\\Views\\garansi_kompresor\\garansi_kompresor.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('garansi_kompresor/garansi_kompresor', [], true)
+ 5 APPPATH\Controllers\GaransiKompresorController.php(16): view('garansi_kompresor/garansi_kompresor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GaransiKompresorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GaransiKompresorController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+CRITICAL - 2024-10-16 06:50:20 --> ErrorException: Undefined variable $sparepartwarranty
+[Method: GET, Route: garansi_kompresor]
+in APPPATH\Views\garansi_kompresor\garansi_kompresor.php on line 82.
+ 1 APPPATH\Views\garansi_kompresor\garansi_kompresor.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sparepartwarranty', 'E:\\Magang\\product_registration\\app\\Views\\garansi_kompresor\\garansi_kompresor.php', 82)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Magang\\product_registration\\app\\Views\\garansi_kompresor\\garansi_kompresor.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('garansi_kompresor/garansi_kompresor', [], true)
+ 5 APPPATH\Controllers\GaransiKompresorController.php(16): view('garansi_kompresor/garansi_kompresor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GaransiKompresorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GaransiKompresorController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+CRITICAL - 2024-10-16 06:50:47 --> ErrorException: Undefined variable $sparepartwarranty
+[Method: GET, Route: garansi_kompresor]
+in APPPATH\Views\garansi_kompresor\garansi_kompresor.php on line 84.
+ 1 APPPATH\Views\garansi_kompresor\garansi_kompresor.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sparepartwarranty', 'E:\\Magang\\product_registration\\app\\Views\\garansi_kompresor\\garansi_kompresor.php', 84)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Magang\\product_registration\\app\\Views\\garansi_kompresor\\garansi_kompresor.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('garansi_kompresor/garansi_kompresor', [], true)
+ 5 APPPATH\Controllers\GaransiKompresorController.php(16): view('garansi_kompresor/garansi_kompresor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GaransiKompresorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GaransiKompresorController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+CRITICAL - 2024-10-16 06:51:10 --> ErrorException: Undefined variable $sparepartwarranty
+[Method: GET, Route: garansi_kompresor]
+in APPPATH\Views\garansi_kompresor\garansi_kompresor.php on line 87.
+ 1 APPPATH\Views\garansi_kompresor\garansi_kompresor.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sparepartwarranty', 'E:\\Magang\\product_registration\\app\\Views\\garansi_kompresor\\garansi_kompresor.php', 87)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Magang\\product_registration\\app\\Views\\garansi_kompresor\\garansi_kompresor.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('garansi_kompresor/garansi_kompresor', [], true)
+ 5 APPPATH\Controllers\GaransiKompresorController.php(16): view('garansi_kompresor/garansi_kompresor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GaransiKompresorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GaransiKompresorController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+INFO - 2024-10-16 06:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 06:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 06:56:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 07:02:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 07:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-16 07:26:17 --> InvalidArgumentException: Invalid escape context provided.
+[Method: GET, Route: brand]
+in SYSTEMPATH\Common.php on line 434.
+ 1 APPPATH\Views\brand\brand.php(87): esc('ADVAN', 'ad')
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Magang\\product_registration\\app\\Views\\brand\\brand.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('brand/brand', [], true)
+ 5 APPPATH\Controllers\BrandController.php(16): view('brand/brand', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BrandController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BrandController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+CRITICAL - 2024-10-16 07:26:24 --> InvalidArgumentException: Invalid escape context provided.
+[Method: GET, Route: brand]
+in SYSTEMPATH\Common.php on line 434.
+ 1 APPPATH\Views\brand\brand.php(87): esc('ADVAN', 'ad')
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Magang\\product_registration\\app\\Views\\brand\\brand.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('brand/brand', [], true)
+ 5 APPPATH\Controllers\BrandController.php(16): view('brand/brand', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BrandController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BrandController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+INFO - 2024-10-16 07:51:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 07:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-16 07:55:34 --> ParseError: syntax error, unexpected token "class", expecting "," or ";"
+[Method: GET, Route: brand]
+in APPPATH\Views\brand\brand.php on line 82.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('brand/brand', [], true)
+ 3 APPPATH\Controllers\BrandController.php(16): view('brand/brand', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BrandController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BrandController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+INFO - 2024-10-16 07:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 07:58:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 08:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-16 08:16:11 --> ErrorException: Undefined variable $categories
+[Method: GET, Route: subkategori]
+in APPPATH\Views\subkategori\subkategori.php on line 110.
+ 1 APPPATH\Views\subkategori\subkategori.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categories', 'E:\\Magang\\product_registration\\app\\Views\\subkategori\\subkategori.php', 110)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Magang\\product_registration\\app\\Views\\subkategori\\subkategori.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('subkategori/subkategori', [], true)
+ 5 APPPATH\Controllers\SubkategoriController.php(15): view('subkategori/subkategori', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SubkategoriController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubkategoriController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+CRITICAL - 2024-10-16 08:20:02 --> ErrorException: Undefined array key "category_id"
+[Method: GET, Route: subkategori]
+in APPPATH\Views\subkategori\subkategori.php on line 82.
+ 1 APPPATH\Views\subkategori\subkategori.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_id"', 'E:\\Magang\\product_registration\\app\\Views\\subkategori\\subkategori.php', 82)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Magang\\product_registration\\app\\Views\\subkategori\\subkategori.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('subkategori/subkategori', [], true)
+ 5 APPPATH\Controllers\SubkategoriController.php(18): view('subkategori/subkategori', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SubkategoriController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubkategoriController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+CRITICAL - 2024-10-16 08:23:33 --> ErrorException: Undefined array key "category_id"
+[Method: GET, Route: subkategori]
+in APPPATH\Views\subkategori\subkategori.php on line 82.
+ 1 APPPATH\Views\subkategori\subkategori.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_id"', 'E:\\Magang\\product_registration\\app\\Views\\subkategori\\subkategori.php', 82)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Magang\\product_registration\\app\\Views\\subkategori\\subkategori.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('subkategori/subkategori', [], true)
+ 5 APPPATH\Controllers\SubkategoriController.php(18): view('subkategori/subkategori', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SubkategoriController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubkategoriController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+CRITICAL - 2024-10-16 08:25:18 --> ErrorException: Undefined variable $kategori
+[Method: GET, Route: subkategori]
+in APPPATH\Views\subkategori\subkategori.php on line 81.
+ 1 APPPATH\Views\subkategori\subkategori.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kategori', 'E:\\Magang\\product_registration\\app\\Views\\subkategori\\subkategori.php', 81)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Magang\\product_registration\\app\\Views\\subkategori\\subkategori.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('subkategori/subkategori', [], true)
+ 5 APPPATH\Controllers\SubkategoriController.php(18): view('subkategori/subkategori', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SubkategoriController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubkategoriController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+CRITICAL - 2024-10-16 08:28:15 --> ErrorException: Undefined array key "category_id"
+[Method: GET, Route: subkategori]
+in APPPATH\Views\subkategori\subkategori.php on line 82.
+ 1 APPPATH\Views\subkategori\subkategori.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_id"', 'E:\\Magang\\product_registration\\app\\Views\\subkategori\\subkategori.php', 82)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Magang\\product_registration\\app\\Views\\subkategori\\subkategori.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('subkategori/subkategori', [], true)
+ 5 APPPATH\Controllers\SubkategoriController.php(18): view('subkategori/subkategori', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SubkategoriController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubkategoriController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+CRITICAL - 2024-10-16 08:30:38 --> ErrorException: Undefined array key "category_id"
+[Method: GET, Route: subkategori]
+in APPPATH\Views\subkategori\subkategori.php on line 82.
+ 1 APPPATH\Views\subkategori\subkategori.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_id"', 'E:\\Magang\\product_registration\\app\\Views\\subkategori\\subkategori.php', 82)
+ 2 SYSTEMPATH\View\View.php(234): include('E:\\Magang\\product_registration\\app\\Views\\subkategori\\subkategori.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('subkategori/subkategori', [], true)
+ 5 APPPATH\Controllers\SubkategoriController.php(18): view('subkategori/subkategori', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SubkategoriController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubkategoriController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+INFO - 2024-10-16 08:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-16 08:38:10 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`product_registration`.`subcategories`, CONSTRAINT `subcategories_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE) in E:\Magang\product_registration\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 E:\Magang\product_registration\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `subcate...', 0)
+#1 E:\Magang\product_registration\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `subcate...')
+#2 E:\Magang\product_registration\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `subcate...')
+#3 E:\Magang\product_registration\system\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `subcate...', Array, false)
+#4 E:\Magang\product_registration\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 E:\Magang\product_registration\system\BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 E:\Magang\product_registration\system\Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 E:\Magang\product_registration\app\Controllers\SubkategoriController.php(84): CodeIgniter\Model->update('5', Array)
+#8 E:\Magang\product_registration\system\CodeIgniter.php(933): App\Controllers\SubkategoriController->updateSubkategori('5')
+#9 E:\Magang\product_registration\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubkategoriController))
+#10 E:\Magang\product_registration\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\Magang\product_registration\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 E:\Magang\product_registration\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 E:\Magang\product_registration\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 E:\Magang\product_registration\system\rewrite.php(44): require_once('E:\\Magang\\produ...')
+#15 {main}
+CRITICAL - 2024-10-16 08:38:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`product_registration`.`subcategories`, CONSTRAINT `subcategories_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE)
+[Method: POST, Route: subkategori/updateSubkategori/5]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `subcategories` SET `name` = :name:, `category_id` = :category_id:
+WHERE `subcategories`.`id` IN :subcategories.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\SubkategoriController.php(84): CodeIgniter\Model->update('5', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SubkategoriController->updateSubkategori('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubkategoriController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+CRITICAL - 2024-10-16 08:38:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`product_registration`.`subcategories`, CONSTRAINT `subcategories_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `subcategories` SET `name` = \'DELT\', `category_id` = \'\'
+WHERE `subcategories`.`id` IN (\'5\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `subcategories` SET `name` = \'DELT\', `category_id` = \'\'
+WHERE `subcategories`.`id` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `subcategories` SET `name` = :name:, `category_id` = :category_id:
+WHERE `subcategories`.`id` IN :subcategories.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\SubkategoriController.php(84): CodeIgniter\Model->update('5', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SubkategoriController->updateSubkategori('5')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubkategoriController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+CRITICAL - 2024-10-16 08:38:10 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`product_registration`.`subcategories`, CONSTRAINT `subcategories_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `subcategories` SET `name` = \'DELT\', `category_id` = \'\'
+WHERE `subcategories`.`id` IN (\'5\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `subcategories` SET `name` = \'DELT\', `category_id` = \'\'
+WHERE `subcategories`.`id` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `subcategories` SET `name` = \'DELT\', `category_id` = \'\'
+WHERE `subcategories`.`id` IN (\'5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `subcategories` SET `name` = :name:, `category_id` = :category_id:
+WHERE `subcategories`.`id` IN :subcategories.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\SubkategoriController.php(84): CodeIgniter\Model->update('5', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SubkategoriController->updateSubkategori('5')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubkategoriController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('E:\\Magang\\product_registration\\public\\index.php')
+INFO - 2024-10-16 08:38:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 08:41:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 08:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 08:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 08:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-16 08:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
